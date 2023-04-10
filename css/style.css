@@ -1,0 +1,182 @@
+:root {
+  --primary: #ffee00;
+  --secondary: #95989a;
+  --text-color: #fff;
+  --text-secondary: #000;
+  --text-tertiary: #5d5d5d;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+/* Event form */
+
+#event-description {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/hrz-5.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 85vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--text-color);
+
+}
+
+#disclaimer h2,
+#disclaimer .event-date {
+  color: var(--primary);
+}
+
+#disclaimer h2 {
+  font-size: 3em;
+  margin-bottom: 1em;
+}
+
+#disclaimer .about-event {
+  font-size: 2em;
+  text-transform: uppercase;
+  max-width: 350px;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+#disclaimer p {
+  font-size: 1.2em;
+  margin-bottom: 0.3em;
+}
+
+#disclaimer .event-date {
+  font-weight: bold;
+}
+
+/* ESTILIZAÇÃO DO FORMULARIO */
+
+#subscription-form {
+  background-color: #ffd90086;
+  padding: 2em;
+  max-width: 22%;
+  border-radius: 15px;
+}
+
+#subscription-form p {
+  font-size: 1.5em;
+  color: var(--text-secondary);
+  margin-bottom: 1em;
+}
+
+#subscription-form .insert_form {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.1em;
+  padding: 0;
+}
+
+#subscription-form .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5em;
+}
+
+#subscription-form .form-group label {
+  color: var(--text-tertiary);
+  margin-bottom: 0.3em;
+  font-weight: bold;
+}
+
+#subscription-form .form-group input,
+#subscription-form .form-group select {
+  padding: 6px 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+#subscription-form form .btn {
+  background-color: var(--text-secondary);
+  color: var(--text-color);
+  text-transform: uppercase;
+  width: 100%;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  opacity: 0.8;
+  border-radius: 5px;
+}
+
+#subscription-form form .btn:hover {
+  background-color: var(--primary);
+  color: var(--text-secondary);
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+/* Benefits section */
+
+#key-benefits h2 {
+  background-color: var(--text-secondary);
+  text-align: center;
+  padding: 1em;
+  font-weight: 900;
+  color: var(--primary);
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+#key-benefits .benefits {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 4em;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#key-benefits .benefits .benefit{
+  text-align:center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 200px;
+  color: var(--text-tertiary);
+
+}
+
+#key-benefits .benefits .benefit .benefit-img{
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin-bottom: 1em;
+  opacity: 0.9;
+
+}
+
+#key-benefits .benefits .benefit .benefit-img:hover{
+  opacity: 0.7;
+  transition: 0.01s;
+  cursor: pointer;
+  border: rgb(255, 251, 0) 6px solid;
+}
+
+#key-benefits .benefits #benefit-1{
+  background-image: url(../img/sqr-1.jpg);
+}
+
+#key-benefits .benefits #benefit-2{
+  background-image: url(../img/sqr-2.jpg);
+}
+
+#key-benefits .benefits #benefit-3{
+  background-image: url(../img/sqr-3.jpg);
+}
